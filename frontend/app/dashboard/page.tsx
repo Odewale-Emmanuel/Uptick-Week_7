@@ -34,7 +34,7 @@ export default async function Dashboard() {
   const fetchNotes = async () => {
     try {
       const response = await axios.get<Note[]>(
-        `http://localhost:5500/api/note?user_id=${user?._id}`,
+        `http://host.docker.internal:5500/api/note?user_id=${user?._id}`,
         {
           headers: { Authorization: `Bearer ${authToken}` },
         }
