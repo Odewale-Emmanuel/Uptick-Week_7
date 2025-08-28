@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    container_name: starknotes-frontend
+    depends_on:
+      - backend
+    ports:
+      - 3000:3000
+
+  backend:
+    build:
+      context: ./backend
+    container_name: starknotes-backend
+    env_file:
+      - path: ./backend/.env
+        required: true
+    ports:
+      - 5500:5500

@@ -1,0 +1,45 @@
+{
+  "name": "uptick-week_4",
+  "version": "1.0.0",
+  "description": "This backend application provides a RESTful API for managing users and their notes. Built with Express.js, it leverages Mongoose ODM to interact with a MongoDB database. Users can register, authenticate, and create, read, update, and delete their personal notes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node server.ts",
+    "dev": "npx ts-node server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Odewale-Emmanuel/Uptick-Week_4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Odewale-Emmanuel/Uptick-Week_4/issues"
+  },
+  "homepage": "https://github.com/Odewale-Emmanuel/Uptick-Week_4#readme",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
+    "@types/express-jwt": "^6.0.4",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.1.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-jwt": "^8.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.5"
+  }
+}

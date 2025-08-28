@@ -1,0 +1,6 @@
+import { Document } from "mongoose";
+interface IToken extends Document {
+  token: string;
+}
+
+export { IToken };
